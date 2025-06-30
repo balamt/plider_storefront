@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Add favicon -->
     <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
-    <title>Dev Utilities</title>
+    <title>Plider 10 - Windows Slideshow App</title>
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <!-- FontAwesome CSS -->
@@ -37,18 +37,29 @@
         .brand-text {
             padding-left: 0.5rem;
         }
-    </style>
+        .logo-img {
             margin-right: 10px;
             border-radius: 15%;
+        }
+        .navbar-brand-container {
+            padding: 10px;
+            background-color: cornflowerblue;
+        }
+        .navbar-custom {
+            background-color: cornflowerblue !important;
+            border-radius: 1.5rem 0rem 1.5rem 0rem !important;
+        }
+        .hero-image {
+            background-color: cornflowerblue !important;
+            border-radius: 1.5rem 0rem 1.5rem 0rem !important;
         }
     </style>
 </head>
 <body>
-            <span class="d-none d-lg-inline brand-text">Dev Utilities</span>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <a class="navbar-brand d-flex align-items-center justify-content-center" href="#" style="padding: 10px;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top navbar-custom">
+        <a class="navbar-brand d-flex align-items-center justify-content-center navbar-brand-container" href="#">
             <img src="./images/icon-1024-maskable.png" alt="Logo" class="d-inline-block align-top mx-auto rounded logo-img" width="64" height="64">
-            <span class="d-none d-lg-inline pl-2">Dev Utilities</span>
+            <span class="d-none d-lg-inline pl-2">Plider 10</span>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -62,6 +73,9 @@
                     <a class="nav-link" href="#features">Features</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="#changelog">Change Log</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="#contact">Contact</a>
                 </li>
             </ul>
@@ -71,73 +85,76 @@
     <!-- Hero Section -->
     <section id="hero" class="hero">
         <div class="container">
-            <h1 class="display-4">Simplify Your Development Workflow with Dev Utilities</h1>
-            <p class="lead">Dev Utilities offers an all-in-one toolkit for developers to streamline, optimize, and automate daily development tasks effortlessly.</p>
-            <a href="#" class="btn btn-primary btn-lg">Get Started Free</a>
-            <a href="#features" class="btn btn-secondary btn-lg">Explore Features</a>
-            <img src="./images/icon-1024-maskable.png" alt="Hero Image" class="img-fluid mt-4">
+            <h1 class="display-4">Create Beautiful Slideshows with Plider 10</h1>
+            <p class="lead">Plider 10 is a Windows 10 Universal App that lets you create stunning slideshows and virtual albums with your photos. Available on all Windows 10 devices.</p>
+            <div class="d-flex justify-content-center flex-wrap">
+                <a href="https://apps.microsoft.com/detail/9NBLGGH4VFQQ" class="btn btn-primary btn-lg m-2 flex-fill text-center" style="min-width:220px; max-width:260px;">Get it on Microsoft Store</a>
+                <a href="ms-windows-store://pdp/?productid=9NBLGGH4VFQQ" class="btn btn-secondary btn-lg m-2 flex-fill text-center" style="min-width:220px; max-width:260px;">Open in Store App</a>
+                <a href="#features" class="btn btn-info btn-lg m-2 flex-fill text-center" style="min-width:220px; max-width:260px;">Explore Features</a>
+            </div>
+            <img src="./images/icon-1024-maskable.png" alt="Plider 10 Logo" class="img-fluid mt-4 hero-image">
         </div>
     </section>
 
     <!-- Key Features Section -->
     <section id="features" class="features">
         <div class="container">
-            <h2 class="text-center">Powerful Tools, All in One Place</h2>
+            <h2 class="text-center">Powerful Slideshow Features</h2>
             <div class="row">
                 <div class="col-md-4 text-center">
-                    <i class="fas fa-code fa-3x mb-3"></i>
-                    <h4>Code Formatter & Beautifier</h4>
-                    <p>Automatically format your code for better readability and maintainability.</p>
+                    <i class="fas fa-images fa-3x mb-3"></i>
+                    <h4>Universal Windows App</h4>
+                    <p>Available for all Windows 10 devices including PCs, tablets, and phones.</p>
                 </div>
                 <div class="col-md-4 text-center">
-                    <i class="fas fa-vial fa-3x mb-3"></i>
-                    <h4>Regex Tester</h4>
-                    <p>Quickly build, test, and debug regular expressions.</p>
+                    <i class="fas fa-folder-plus fa-3x mb-3"></i>
+                    <h4>Virtual Albums</h4>
+                    <p>Create custom virtual albums with your favorite photos from different folders.</p>
                 </div>
                 <div class="col-md-4 text-center">
-                    <i class="fas fa-code-branch fa-3x mb-3"></i>
-                    <h4>JSON Formatter/Validator</h4>
-                    <p>Easily format and validate JSON data with a single click.</p>
+                    <i class="fas fa-music fa-3x mb-3"></i>
+                    <h4>Music Integration</h4>
+                    <p>Pick a song and play music while enjoying your slideshows.</p>
                 </div>
                 <div class="col-md-4 text-center">
-                    <i class="fas fa-lock fa-3x mb-3"></i>
-                    <h4>Hash Generator</h4>
-                    <p>Generate secure hashes for encryption and verification.</p>
+                    <i class="fas fa-thumbtack fa-3x mb-3"></i>
+                    <h4>Pin to Start</h4>
+                    <p>Pin your favorite albums to Start for quick access with animated tiles.</p>
                 </div>
                 <div class="col-md-4 text-center">
-                    <i class="fas fa-exchange-alt fa-3x mb-3"></i>
-                    <h4>Base64 Encode/Decode</h4>
-                    <p>Convert data to Base64 encoding and decode effortlessly.</p>
+                    <i class="fas fa-keyboard fa-3x mb-3"></i>
+                    <h4>Keyboard Shortcuts</h4>
+                    <p>Control slideshows with keyboard shortcuts on compatible devices.</p>
                 </div>
                 <div class="col-md-4 text-center">
-                    <i class="fas fa-network-wired fa-3x mb-3"></i>
-                    <h4>Live API Tester</h4>
-                    <p>Test your APIs live, inspect responses, and debug efficiently.</p>
+                    <i class="fas fa-language fa-3x mb-3"></i>
+                    <h4>Multi-Language Support</h4>
+                    <p>Available in multiple languages including English, Tamil, and Spanish.</p>
                 </div>
             </div>
             <div class="text-center mt-4">
-                <a href="#" class="btn btn-primary">Explore More Tools →</a>
+                <a href="https://apps.microsoft.com/detail/9NBLGGH4VFQQ" class="btn btn-primary">Get it on Microsoft Store →</a>
             </div>
         </div>
     </section>
 
-    <!-- Problem & Solution Section -->
-    <section id="problem-solution" class="problem-solution bg-light">
+    <!-- Why Choose Plider 10 Section -->
+    <section id="why-choose" class="problem-solution bg-light">
         <div class="container">
-            <h2 class="text-center">Why Waste Time on Repetitive Tasks?</h2>
-            <p class="text-center">Manually formatting code, testing APIs, or debugging regex is time-consuming. Dev Utilities combines the essential developer tools into a single, fast, and user-friendly interface.</p>
+            <h2 class="text-center">Why Choose Plider 10?</h2>
+            <p class="text-center">Showcase your memories in beautiful slideshows without complicated setup. Plider 10 makes it easy to create and enjoy slideshows on any Windows 10 device.</p>
             <div class="row text-center">
                 <div class="col-md-4">
-                    <i class="fas fa-clock fa-3x mb-3"></i>
-                    <p>Save hours with instant tools for formatting, testing, and debugging.</p>
+                    <i class="fas fa-bolt fa-3x mb-3"></i>
+                    <p>Fast performance and optimized for all Windows 10 devices.</p>
                 </div>
                 <div class="col-md-4">
-                    <i class="fas fa-tools fa-3x mb-3"></i>
-                    <p>No need to switch between multiple tools—Dev Utilities has it all.</p>
+                    <i class="fas fa-lock fa-3x mb-3"></i>
+                    <p>Your photos stay on your device - no data collection or sharing.</p>
                 </div>
                 <div class="col-md-4">
-                    <i class="fas fa-rocket fa-3x mb-3"></i>
-                    <p>Boost productivity and focus on coding, not repetitive tasks.</p>
+                    <i class="fas fa-th fa-3x mb-3"></i>
+                    <p>Create custom virtual albums to organize your photos just how you want.</p>
                 </div>
             </div>
         </div>
@@ -149,19 +166,19 @@
             <h2 class="text-center">Get Started in 3 Simple Steps</h2>
             <div class="row text-center">
                 <div class="col-md-4">
-                    <i class="fas fa-step-forward fa-3x mb-3"></i>
-                    <h4>Step 1: Choose a Tool</h4>
-                    <p>Select the utility you need from the Dev Utilities dashboard.</p>
+                    <i class="fas fa-download fa-3x mb-3"></i>
+                    <h4>Step 1: Download</h4>
+                    <p>Get Plider 10 from the Microsoft Store on any Windows 10 device.</p>
                 </div>
                 <div class="col-md-4">
-                    <i class="fas fa-keyboard fa-3x mb-3"></i>
-                    <h4>Step 2: Input Your Data</h4>
-                    <p>Paste or upload your data, and let the tool do the magic.</p>
+                    <i class="fas fa-folder-open fa-3x mb-3"></i>
+                    <h4>Step 2: Select Photos</h4>
+                    <p>Choose your favorite photos or create custom virtual albums.</p>
                 </div>
                 <div class="col-md-4">
-                    <i class="fas fa-check fa-3x mb-3"></i>
-                    <h4>Step 3: Get Results Instantly</h4>
-                    <p>Copy, save, or export results in seconds.</p>
+                    <i class="fas fa-play-circle fa-3x mb-3"></i>
+                    <h4>Step 3: Start Your Slideshow</h4>
+                    <p>Enjoy your photos with optional music in a beautiful slideshow.</p>
                 </div>
             </div>
         </div>
@@ -170,133 +187,102 @@
     <!-- Benefits Section -->
     <section id="benefits" class="benefits bg-light">
         <div class="container">
-            <h2 class="text-center">Why Developers Love Dev Utilities</h2>
+            <h2 class="text-center">Why Users Love Plider 10</h2>
             <ul class="list-unstyled text-center">
-                <li><i class="fas fa-check-circle"></i> Time-Saving: No need to search for separate tools; everything is in one place.</li>
-                <li><i class="fas fa-check-circle"></i> Easy-to-Use: Clean, intuitive UI designed for developers of all levels.</li>
-                <li><i class="fas fa-check-circle"></i> Fast and Efficient: Get instant results without hassle.</li>
-                <li><i class="fas fa-check-circle"></i> Accessible Anytime: Works across devices—web-based tools ready wherever you are.</li>
-                <li><i class="fas fa-check-circle"></i> Secure and Reliable: Your data stays private and secure.</li>
+                <li><i class="fas fa-check-circle"></i> Universal App: Works on all Windows 10 devices - PC, tablet, and phone.</li>
+                <li><i class="fas fa-check-circle"></i> Easy-to-Use: Clean, intuitive UI designed for users of all ages.</li>
+                <li><i class="fas fa-check-circle"></i> Virtual Albums: Create custom collections without moving or duplicating photos.</li>
+                <li><i class="fas fa-check-circle"></i> Pin to Start: Quick access to favorite albums with animated live tiles.</li>
+                <li><i class="fas fa-check-circle"></i> Private & Secure: Your photos stay on your device, with no data collection.</li>
+                <li><i class="fas fa-check-circle"></i> Multi-Language: Support for English (International), English (India), Tamil, and Spanish.</li>
             </ul>
         </div>
     </section>
 
-    <!-- Demo or Screenshots Section -->
-    <section id="demo" class="demo">
+    <!-- App Features Section -->
+    <section id="app-features" class="testimonials">
         <div class="container">
-            <h2 class="text-center">See It in Action</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <img src="screenshot1.png" alt="Screenshot 1" class="img-fluid">
-                </div>
-                <div class="col-md-6">
-                    <img src="screenshot2.png" alt="Screenshot 2" class="img-fluid">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials bg-light">
-        <div class="container">
-            <h2 class="text-center">What Developers Are Saying</h2>
+            <h2 class="text-center">Key App Features</h2>
             <div class="row">
                 <div class="col-md-4 text-center">
-                    <img src="user1.jpg" alt="User 1" class="rounded-circle mb-3" width="100">
-                    <p>"Dev Utilities has saved me countless hours switching between tools. It’s now a key part of my daily workflow!"</p>
-                    <p><strong>Jane Doe</strong>, Full-Stack Developer</p>
+                    <i class="fas fa-photo-video fa-3x mb-3"></i>
+                    <h4>Customizable Slideshows</h4>
+                    <p>Create beautiful slideshows with your photos stored on your device. Customize transition effects and timing to match your preferences.</p>
                 </div>
                 <div class="col-md-4 text-center">
-                    <img src="user2.jpg" alt="User 2" class="rounded-circle mb-3" width="100">
-                    <p>"The all-in-one toolkit I didn't know I needed. Highly recommend for any developer."</p>
-                    <p><strong>John Smith</strong>, Backend Developer</p>
+                    <i class="fas fa-folder fa-3x mb-3"></i>
+                    <h4>Virtual Albums</h4>
+                    <p>Create custom collections of photos from different folders without duplicating files. Organize your memories just the way you want.</p>
                 </div>
                 <div class="col-md-4 text-center">
-                    <img src="user3.jpg" alt="User 3" class="rounded-circle mb-3" width="100">
-                    <p>"A must-have for every developer. It simplifies so many tasks and boosts productivity."</p>
-                    <p><strong>Emily Johnson</strong>, Frontend Developer</p>
+                    <i class="fas fa-mobile-alt fa-3x mb-3"></i>
+                    <h4>Universal App</h4>
+                    <p>Works seamlessly across all your Windows 10 devices, from PCs and tablets to phones. Take your slideshows wherever you go.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Pricing Section -->
-    <section id="pricing" class="pricing">
+    <!-- Change Log Section -->
+    <section id="changelog" class="demo bg-light">
         <div class="container">
-            <h2 class="text-center">Flexible Plans for Everyone</h2>
-            <div class="row text-center">
-                <div class="col-md-6">
-                    <h3>Free Plan</h3>
-                    <p>Access essential tools at no cost.</p>
-                    <a href="#" class="btn btn-primary">Get Started for Free</a>
-                </div>
-                <div class="col-md-6">
-                    <h3>Pro Plan</h3>
-                    <p>Unlock premium features for power users—only $X/month.</p>
-                    <a href="#" class="btn btn-secondary">Upgrade to Pro</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQs Section -->
-    <section id="faqs" class="faqs bg-light">
-        <div class="container">
-            <h2 class="text-center">Frequently Asked Questions</h2>
-            <div class="accordion" id="faqAccordion">
-                <div class="card">
-                    <div class="card-header" id="faqHeading1">
-                        <h5 class="mb-0">
-                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#faq1" aria-expanded="true" aria-controls="faq1">
-                                What tools are included in Dev Utilities?
-                            </button>
-                        </h5>
-                    </div>
-                    <div id="faq1" class="collapse show" aria-labelledby="faqHeading1" data-parent="#faqAccordion">
+            <h2 class="text-center">Change Log</h2>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card mb-4">
+                        <div class="card-header">
+                            <h4>Version 10.3.0.0</h4>
+                        </div>
                         <div class="card-body">
-                            Dev Utilities includes a code formatter, regex tester, JSON formatter/validator, hash generator, Base64 encode/decode, and live API tester.
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><span class="badge badge-success">NEW</span> Pick a song and Play Music</li>
+                                <li class="list-group-item"><span class="badge badge-success">NEW</span> Pinned Tile of an Album will play slideshow immediately</li>
+                            </ul>
                         </div>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="card-header" id="faqHeading2">
-                        <h5 class="mb-0">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#faq2" aria-expanded="false" aria-controls="faq2">
-                                Is there a free version available?
-                            </button>
-                        </h5>
-                    </div>
-                    <div id="faq2" class="collapse" aria-labelledby="faqHeading2" data-parent="#faqAccordion">
+                    
+                    <div class="card mb-4">
+                        <div class="card-header">
+                            <h4>Version 10.2.0.0</h4>
+                        </div>
                         <div class="card-body">
-                            Yes, Dev Utilities offers a free plan with access to essential tools.
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><span class="badge badge-success">NEW</span> Add Virtual albums and view in Virtual Album Page</li>
+                                <li class="list-group-item"><span class="badge badge-success">NEW</span> Added English (International) and English (India)</li>
+                                <li class="list-group-item"><span class="badge badge-info">FIXED</span> Kicked out Few Bugs when Selecting the Play Option</li>
+                                <li class="list-group-item"><span class="badge badge-primary">IMPROVED</span> Optimized the App Performances</li>
+                                <li class="list-group-item"><span class="badge badge-info">FIXED</span> Tuned App to support All the Devices</li>
+                                <li class="list-group-item"><span class="badge badge-info">FIXED</span> Pin2Start Fixed (Previously it was not pinning the Tiles, but now its fixed)</li>
+                                <li class="list-group-item"><span class="badge badge-success">NEW</span> Pinned Tiles will animate with the images from Album (limited to 6 Photos only)</li>
+                            </ul>
                         </div>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="card-header" id="faqHeading3">
-                        <h5 class="mb-0">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#faq3" aria-expanded="false" aria-controls="faq3">
-                                How secure is my data?
-                            </button>
-                        </h5>
-                    </div>
-                    <div id="faq3" class="collapse" aria-labelledby="faqHeading3" data-parent="#faqAccordion">
+                    
+                    <div class="card mb-4">
+                        <div class="card-header">
+                            <h4>Version 10.1.0.0</h4>
+                        </div>
                         <div class="card-body">
-                            Your data stays private and secure. We use industry-standard encryption and security practices.
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><span class="badge badge-info">FIXED</span> Photo Not Displayed when Playing Slideshow in Mobile Devices</li>
+                                <li class="list-group-item"><span class="badge badge-success">NEW</span> Included Tamil and Spanish Language Additionally</li>
+                                <li class="list-group-item"><span class="badge badge-primary">UI PERFORMANCE</span> Modified the Album Menus</li>
+                                <li class="list-group-item"><span class="badge badge-success">NEW</span> Keyboard Shortcuts for Devices with Keyboard (Backspace to navigate back, Escape when full screen, Forward &amp; Backward Keys to control the slides)</li>
+                            </ul>
                         </div>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="card-header" id="faqHeading4">
-                        <h5 class="mb-0">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#faq4" aria-expanded="false" aria-controls="faq4">
-                                Can I use Dev Utilities on multiple devices?
-                            </button>
-                        </h5>
-                    </div>
-                    <div id="faq4" class="collapse" aria-labelledby="faqHeading4" data-parent="#faqAccordion">
+                    
+                    <div class="card mb-4">
+                        <div class="card-header">
+                            <h4>Version 10.0.0.0</h4>
+                        </div>
                         <div class="card-body">
-                            Yes, Dev Utilities is web-based and works across devices.
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Initial Beta Version</li>
+                                <li class="list-group-item">Released as Beta preview</li>
+                                <li class="list-group-item">Available for all Windows 10 Devices (Universal App)</li>
+                                <li class="list-group-item">Certain Menu Items are disabled, it will be available in the up coming versions.</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -307,19 +293,52 @@
     <!-- Final CTA Section -->
     <section id="final-cta" class="final-cta">
         <div class="container text-center">
-            <h2>Start Simplifying Your Development Workflow Today!</h2>
-            <a href="#" class="btn btn-primary btn-lg">Get Started for Free</a>
-            <a href="#" class="btn btn-secondary btn-lg">Try Dev Utilities Now</a>
+            <h2>Start Creating Beautiful Slideshows Today!</h2>
+            <a href="https://apps.microsoft.com/detail/9NBLGGH4VFQQ" class="btn btn-primary btn-lg">Get it on Microsoft Store</a>
+            <a href="ms-windows-store://pdp/?productid=9NBLGGH4VFQQ" class="btn btn-secondary btn-lg">Open in Store App</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Contact Us</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center">
+                    <p class="lead">Have questions or feedback about Plider 10? We'd love to hear from you!</p>
+                    <div class="d-flex justify-content-center mt-4">
+                        <div class="mx-3">
+                            <i class="fas fa-envelope fa-2x mb-2"></i>
+                            <p><a href="mailto:plider@balamt.dev">plider@balamt.dev</a></p>
+                        </div>
+                        <div class="mx-3">
+                            <i class="fab fa-twitter fa-2x mb-2"></i>
+                            <p><a href="https://twitter.com/balamt_in" target="_blank" rel="noopener">@balamt_in</a></p>
+                        </div>
+                        <div class="mx-3">
+                            <i class="fab fa-github fa-2x mb-2"></i>
+                            <p><a href="https://github.com/balamt" target="_blank" rel="noopener">balamt</a></p>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <p>For support requests, please include your device model and Windows version for faster assistance.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>Made by developer for Developer</p>
+            <p>Made by balamt.dev for Windows 10 Users</p>
             <ul class="list-inline">
-                <li class="list-inline-item"><a href="#" data-toggle="modal" data-target="#contentModal" onclick="loadContent('tnc-key-points.md', 'TnC.md')">Terms &amp; Conditions</a></li>
-                <li class="list-inline-item"><a href="#" data-toggle="modal" data-target="#contentModal" onclick="loadContent('privacy-key-points.md', 'PRIVACY.md')">Privacy Policy</a></li>
+                <li class="list-inline-item">
+                    <button type="button" class="btn btn-link" data-toggle="modal" data-target="#contentModal" onclick="loadContent('tnc-key-points-plider10.md', 'plider10-TnC.md')">Terms &amp; Conditions</button>
+                </li>
+                <li class="list-inline-item">
+                    <button type="button" class="btn btn-link" data-toggle="modal" data-target="#contentModal" onclick="loadContent('privacy-key-points.md', 'plider10-privacy-policy.md')">Privacy Policy</button>
+                </li>
             </ul>
         </div>
     </footer>
@@ -345,8 +364,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <!-- Marked.js for Markdown parsing -->
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <!-- Custom JS -->
     <script>
         function loadContent(file1, file2) {

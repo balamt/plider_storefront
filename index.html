@@ -334,10 +334,10 @@
             <p>Made by balamt.dev for Windows 10 Users</p>
             <ul class="list-inline">
                 <li class="list-inline-item">
-                    <button type="button" class="btn btn-link" data-toggle="modal" data-target="#contentModal" onclick="loadContent('tnc-key-points-plider10.md', 'plider10-TnC.md')">Terms &amp; Conditions</button>
+                    <button type="button" class="btn btn-link" data-toggle="modal" data-target="#contentModal" onclick="loadContent('tnc-key-points.md', 'TnC.md')">Terms &amp; Conditions</button>
                 </li>
                 <li class="list-inline-item">
-                    <button type="button" class="btn btn-link" data-toggle="modal" data-target="#contentModal" onclick="loadContent('privacy-key-points.md', 'plider10-privacy-policy.md')">Privacy Policy</button>
+                    <button type="button" class="btn btn-link" data-toggle="modal" data-target="#contentModal" onclick="loadContent('privacy-key-points.md', 'PRIVACY.md')">Privacy Policy</button>
                 </li>
             </ul>
         </div>
@@ -345,13 +345,21 @@
 
     <!-- Modal Template -->
     <div class="modal fade" id="contentModal" tabindex="-1" aria-labelledby="contentModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
+        <div class="modal-dialog modal-lg" id="contentModalDialog">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="contentModalLabel">Content</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
+                    <div class="ml-auto d-flex align-items-center">
+                        <button type="button" class="btn btn-sm btn-outline-secondary mr-2" id="toggleFullScreenBtn" title="Toggle Fullscreen">
+                            <i class="fas fa-expand"></i>
+                        </button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary mr-2" id="printPdfBtn" title="Print as PDF">
+                            <i class="fas fa-print"></i>
+                        </button>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
                 </div>
                 <div class="modal-body">
                     <div id="modalContent"></div>
@@ -359,6 +367,55 @@
             </div>
         </div>
     </div>
+    <script>
+        // Fullscreen toggle for modal
+        document.addEventListener('DOMContentLoaded', function () {
+            var dialog = document.getElementById('contentModalDialog');
+            var btn = document.getElementById('toggleFullScreenBtn');
+            var icon = btn.querySelector('i');
+            btn.addEventListener('click', function () {
+                dialog.classList.toggle('modal-fullscreen');
+                if (dialog.classList.contains('modal-fullscreen')) {
+                    icon.classList.remove('fa-expand');
+                    icon.classList.add('fa-compress');
+                } else {
+                    icon.classList.remove('fa-compress');
+                    icon.classList.add('fa-expand');
+                }
+            });
+
+            // Print as PDF
+            document.getElementById('printPdfBtn').addEventListener('click', function () {
+                var printContents = document.getElementById('modalContent').innerHTML;
+                var win = window.open('', '', 'height=800,width=800');
+                win.document.write('<html><head><title>Print Content</title>');
+                win.document.write('<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">');
+                win.document.write('</head><body>');
+                win.document.write(printContents);
+                win.document.write('</body></html>');
+                win.document.close();
+                win.focus();
+                win.print();
+                win.close();
+            });
+        });
+    </script>
+    <style>
+        .modal-fullscreen {
+            width: 100vw !important;
+            max-width: 100vw !important;
+            height: 100vh !important;
+            margin: 0 !important;
+        }
+        .modal-fullscreen .modal-content {
+            height: 100vh !important;
+            border-radius: 0 !important;
+        }
+        .modal-fullscreen .modal-body {
+            height: calc(100vh - 56px) !important;
+            max-height: none !important;
+        }
+    </style>
 
     <!-- Bootstrap JS and dependencies -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
